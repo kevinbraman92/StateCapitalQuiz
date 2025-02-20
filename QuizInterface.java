@@ -34,8 +34,9 @@ public class QuizInterface {
             }
             myReader.close();
         } catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
+            System.out.println("states.txt not found! Please ensure the text file is in the same directory as the Java files!");
+            System.out.println("Exiting program...");
+            System.exit(1);
         }
     }
 
@@ -66,7 +67,7 @@ public class QuizInterface {
                     + this.stateTreeMap.get(randomState));
             String input = userInput.nextLine();
             if (input.equalsIgnoreCase("exit")) {
-                System.out.println("\nExiting quiz, you got " + correctGuesses + " state capital right!");
+                System.out.println("\nExiting quiz, you got " + correctGuesses + " state capitals right!");
                 break;
             } else if (input.equalsIgnoreCase(this.stateTreeMap.get(randomState).getCapital())) {
                 System.out.println("Good job, you got it!");
