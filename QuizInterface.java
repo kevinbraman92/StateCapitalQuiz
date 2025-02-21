@@ -15,7 +15,7 @@ public class QuizInterface {
 
     public void runQuiz() {
         this.readFile();
-        this.getCapitals();
+        this.getStates();
         this.quiz();
     }
 
@@ -40,7 +40,7 @@ public class QuizInterface {
         }
     }
 
-    public void getCapitals() {
+    public void getStates() {
         if (this.stringStorage.size() != 0) {
             this.stringStorage.clear();
         }
