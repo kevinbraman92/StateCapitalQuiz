@@ -1,7 +1,7 @@
 # StateCapitalQuiz
 A fun quiz program that gives a user a state and asks for the state capital. Keeps track of correct guesses. 
 
-To run simply run Main.java. The file will handle everything else. Make sure to have all the files in the same directory for the program to work correctly. 
+To run simply run Main.java after compiling. The file will handle everything else. Make sure to have all the files in the same directory for the program to work correctly. 
 
 The program implementation involves reading from a text file all the state information and entering it into a TreeMap object. 
 An ArrayList is used to temporarily hold the string values as they are read from the file to ensure the State objects are created correctly, before being entered into the TreeMap using the format (Key: State Abbreviation, Value: State object). 
